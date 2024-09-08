@@ -184,3 +184,49 @@ i.menu-mobile {
 .section-bg{
     background-color: #fbe9d965;
 }
+
+.cv .cv-title{
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#ce8e5e;
+}
+
+.cv .cv-item{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #ce8e5e;
+    position: relative;
+}
+
+.cv .cv-item h4{
+    line-height: 18px;
+    font-weight: 500;
+    font-family: "Josefin Slab", sans-serif;
+    color: #ce8e5e;
+    margin-bottom: 10px;
+
+}
+
+.cv .cv-item h5{
+    background: #fbe9d9;
+    padding: 5px 15px;
+    font-weight: 350;
+    display: inline-block;    
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    border-radius: 15%;
+}
+
+.cv .cv-item::before {
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ce8e5e;
+    background: #ce8e5e;
+    border-radius: 50%;
+    
+}
