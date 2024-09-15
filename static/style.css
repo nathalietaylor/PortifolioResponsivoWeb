@@ -24,7 +24,7 @@ html, body{
 #header .profile img{
     margin: 15px auto;
     display: block;
-    width: 120px;
+    width: 100px;
     border: 2px solid #e45515;
     border-radius: 70%;
 }
@@ -105,6 +105,10 @@ html, body{
 
 #curriculo h2{
     color: #e45515;
+}
+
+#cursos h5{
+    color: #e42c7d;
 }
 
 #lggs h3{
