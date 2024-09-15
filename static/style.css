@@ -13,9 +13,9 @@ html, body{
     top: 0;
     left: 0;
     bottom: 0;
-    background: #fbe9d9;
+    background: #ff9d1d;
     overflow-y: auto;
-    width: 300px;
+    width: 200px;
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
     z-index: 9997;
@@ -25,7 +25,7 @@ html, body{
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 4px solid #ce8e5e;
+    border: 2px solid #e45515;
     border-radius: 70%;
 }
 
@@ -35,13 +35,13 @@ html, body{
     padding: 0;
     font-weight: 600;
     text-align: center;
-    color:  #ce8e5e;
+    color:  #e45515;
 }
 
 #header .profile .social-links a{
     font-size: 1rem;
     background: fbe9d9;
-    color: #ce8e5e;
+    color: #e45515;
     padding: 0.6rem;
     margin-right: 1rem;
     border-radius: 50%;
@@ -50,18 +50,18 @@ html, body{
 }
 
 #header .profile .social-links a:hover{
-    color: #9B5151;
+    color: #df233a;
 }
 
 .nav-menu{
-    padding: 1.5rem;
+    padding: 0.7rem;
 }
 
 .nav-menu a,
 .nav-menu a:focus{
     display: flex;
     align-items: center;
-    color: #ce8e5e;
+    color: #e45515;
     transition: 0.3s;
     font-size: 15px;
 }
@@ -69,7 +69,7 @@ html, body{
 .nav-menu a:focus i{
     font-size: 24px;
     padding-right: 0.8rem;
-    color: #ce8e5e;
+    color: #e45515;
 }
 
 .nav-menu a:hover,
@@ -77,22 +77,46 @@ html, body{
 .nav-menu .active:focus,
 .nav-menu li:hover > a {
     text-decoration: none;
-    color: #9B5151;
+    color: #df233a;
 }
 
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover >a i {
-    color: #9B5151;
+    color: #df233a;
 }
 
 #main{
-    margin-left: 300px;
+    margin-left: 200px;
+}
+
+#sobre h2{
+    color: #e45515;
+}
+
+#info h3{
+    color: #e42c7d;
+}
+
+#habilidades h2{
+    color: #e45515;
+}
+
+#curriculo h2{
+    color: #e45515;
+}
+
+#lggs h3{
+    color: #e42c7d;
+}
+
+#outrasferramentas h3{
+    color: #e42c7d;
 }
 
 #inicio {
-    background-image: url("./img/bg-flores.jpg");
+    background-image: url("./img/bg-geo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -104,17 +128,17 @@ html, body{
 
 #inicio h2{
     font-size: 6rem;
-    color: #ce8e5e;
+    color: #fff;
 }
 
 #inicio span#subtitle {
     margin-right: 8rem;
     font-size: 1.5rem;
-    color: #ce8e5e;
+    color: #fff;
 }
 
 .text-shadow {
-    text-shadow: 4px 4px 10px #fff
+    text-shadow: 4px 4px 10px #df233a
 }
 
 #inicio div#arraste{
@@ -129,7 +153,7 @@ html, body{
 i.menu-mobile {
     position: fixed;
     color: #fff;
-    background-color: #fbe9d9;
+    background-color: #f7a324d7;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
@@ -174,42 +198,45 @@ i.menu-mobile {
 }
 * ::-webkit-scrollbar-track{
     width: 12px;
-    box-shadow: inset 0 0.3rem #fbe9d9;
+    box-shadow: inset 0 0.3rem #ed7b96;
     background-color: #fff;
 }
 * ::-webkit-scrollbar-thumb{
-    background-color: #fbe9d9;
+    background-color: #f7a324;
 }
 
-.section-bg{
-    background-color: #fbe9d965;
+.section-bg1{
+    background-color: #ed7b9621;
+}
+.section-bg2{
+    background-color: #f7a3241f;
 }
 
 .cv .cv-title{
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
-    color:#ce8e5e;
+    color:#e45515;
 }
 
 .cv .cv-item{
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #ce8e5e;
+    border-left: 2px solid #e45515;
     position: relative;
 }
 
-.cv .cv-item h4{
+.cv .cv-item h5{
     line-height: 18px;
     font-weight: 500;
     font-family: "Josefin Slab", sans-serif;
-    color: #ce8e5e;
+    color: #e45515;
     margin-bottom: 10px;
 
 }
 
-.cv .cv-item h5{
-    background: #fbe9d9;
+.cv .cv-item h6{
+    background: #f7a3247e;
     padding: 5px 15px;
     font-weight: 350;
     display: inline-block;    
@@ -225,8 +252,11 @@ i.menu-mobile {
     left: -5px;
     width: 8px;
     height: 8px;
-    border: 2px solid #ce8e5e;
-    background: #ce8e5e;
+    border: 2px solid #e42c7d;
+    background: #e42c7d;
     border-radius: 50%;
     
+}
+.cv .cv-title{
+    color: #e42c7d;
 }
