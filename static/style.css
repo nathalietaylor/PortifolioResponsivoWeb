@@ -24,7 +24,7 @@ html, body{
 #header .profile img{
     margin: 15px auto;
     display: block;
-    width: 100px;
+    width: 80px;
     border: 2px solid #e45515;
     border-radius: 70%;
 }
@@ -89,6 +89,10 @@ html, body{
 
 #main{
     margin-left: 200px;
+}
+
+#fotoNathalie{
+    width: 300px;
 }
 
 #sobre h2{
@@ -263,4 +267,14 @@ i.menu-mobile {
 }
 .cv .cv-title{
     color: #e42c7d;
+}
+
+.carousel-control-prev{
+    margin-left: -10rem;
+}
+.carousel-control-next{
+    margin-right: -10rem;
+}
+.carousel-indicators{
+    margin-bottom: -35px;
 }
