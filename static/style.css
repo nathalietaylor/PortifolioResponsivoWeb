@@ -13,7 +13,7 @@ html, body{
     top: 0;
     left: 0;
     bottom: 0;
-    background: #ebd8bf8a;
+    background: #ebd8bfd8;
     overflow-y: auto;
     width: 200px;
     transition: all ease-in-out 0.5s;
