@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #7a1631;
+  --color-primary-light: #a43c55;
+  --color-primary-dark: #561024;
+  --color-accent: #c2a55e;
+  --color-bg-light: #f8f6f5;
+  --color-text: #1e1e1e;
+  --color-text-soft: #5c5c5c;
+}
+
 /* opcional: centralizar e dar espaçamento padrão */
 .container {
   @apply max-w-6xl mx-auto px-4;

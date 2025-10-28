@@ -4,10 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        lavender: "#7e6bd1",
-        skybrand: "#6ea0c9",
-        orangebrand: "#f2994a",
-        lilac: "#d9c7ff",
+        winebrand: "#7A1631",
+        "winebrand-light": "#A43C55",
+        "winebrand-dark": "#561024",
+
+        sand: "#F8F6F5",
+        goldaccent: "#C2A55E",
+
+        graytech: "#BDBDBD",
       },
       fontFamily: {
         serif: ['"Playfair Display"', "serif"],
