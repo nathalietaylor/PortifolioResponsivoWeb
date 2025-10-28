@@ -4,18 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        winebrand: "#7A1631",
-        "winebrand-light": "#A43C55",
-        "winebrand-dark": "#561024",
-
-        sand: "#F8F6F5",
-        goldaccent: "#C2A55E",
-
-        graytech: "#BDBDBD",
-      },
-      fontFamily: {
-        serif: ['"Playfair Display"', "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"],
+        primary: "#7A1631", // vinho institucional
+        primaryDark: "#561024", // vinho profundo
+        primaryLight: "#A43C55", // vinho intermediário (hover/accents)
+        neutralLight: "#F8F6F5", // fundo claro
+        sand: "#E8E0D7", // areia (bordas/fundos alternados)
+        neutralDark: "#1E1E1E", // texto principal
+        slate: "#5C5C5C", // texto secundário
+        goldAccent: "#C7A26A", // detalhe dourado quente
       },
     },
   },

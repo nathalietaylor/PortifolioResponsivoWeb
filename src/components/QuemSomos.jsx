@@ -2,14 +2,14 @@ import React from "react";
 
 export default function QuemSomos() {
   return (
-    <section id="sobre" className="bg-[#F8F6F5]">
+    <section id="sobre" className="bg-goldAccent bg-opacity-50">
       <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-start">
         {/* COLUNA ESQUERDA */}
         <div>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#1E1E1E]">
+          <h2 className="font-serif text-4xl md:text-5xl text-primaryDark">
             Nossa Liderança
           </h2>
-          <h3 className="font-serif text-2xl md:text-2xl pt-3 text-[#1E1E1E]">
+          <h3 className="font-serif text-2xl md:text-2xl pt-3 text-primaryDark">
             Uma mensagem do nosso diretor técnico
           </h3>
           <p className="mt-6 md:text-lg max-w-prose text-[#1E1E1E]">

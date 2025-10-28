@@ -1,26 +1,29 @@
 import React from "react";
 
-export default function Navbar() {
+export default function NavBar() {
   return (
-    <header className="sticky top-0 z-50 bg-[#561024]/95 text-white backdrop-blur border-b border-[#A43C55]/30">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-sand">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="#home" className="font-serif text-2xl text-white">
+        <a href="#home" className="font-serif text-2xl text-neutralDark">
           SISTEGE
         </a>
-        <nav className="hidden md:flex gap-6 text-sm">
-          <a href="#sobre" className="hover:opacity-80">
+        <nav className="hidden md:flex gap-6 text-sm text-neutralDark">
+          <a href="#sobre" className="hover:text-primary">
             Quem somos
           </a>
-          <a href="#servicos" className="hover:opacity-80">
+          <a href="#servicos" className="hover:text-primary">
             Operação Assistida
           </a>
-          <a href="#treinamentos" className="hover:opacity-80">
+          <a href="#treinamentos" className="hover:text-primary">
             Treinamentos
+          </a>
+          <a href="#contato" className="hover:text-primary">
+            Contato
           </a>
         </nav>
         <a
           href="#contato"
-          className="hidden md:inline-block rounded-full px-5 py-2 bg-[#7A1631] hover:bg-[#A43C55] text-white"
+          className="hidden md:inline-block rounded-full px-5 py-2 bg-primary text-white hover:bg-primaryLight shadow-[0_4px_10px_rgba(0,0,0,0.08)]"
         >
           Fale conosco
         </a>
