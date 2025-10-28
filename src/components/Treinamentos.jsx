@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import React from "react";
 
+/** =========================
+ *  Carrossel de diferenciais
+ *  ========================= */
 function DifferentialsCarousel() {
   const slides = [
     {
@@ -46,9 +48,8 @@ function DifferentialsCarousel() {
 
       <div className="relative max-w-3xl mx-auto">
         {/* área do slide */}
-        <div className="bg-[#F8F6F5] border border-[#ECE9E8] rounded-3xl p-8 md:p-10 shadow-xl backdrop-blur-sm transition duration-500">
+        <div className="bg-[#F8F6F5] border border-[#ECE9E8] rounded-3xl p-8 md:p-10 shadow-xl transition duration-500">
           <div className="flex items-start gap-4">
-            <div className="text-3xl md:text-4xl">{slides[idx].icon}</div>
             <div>
               <h4 className="font-serif text-2xl md:text-3xl text-[#1E1E1E]">
                 {slides[idx].title}
@@ -96,6 +97,131 @@ function DifferentialsCarousel() {
   );
 }
 
+/** ====================
+ *  Abas estilo “pastas”
+ *  ==================== */
+function FolderTabs() {
+  const tabs = [
+    {
+      label: "Interpretação dos Requisitos da Norma",
+      color: "bg-[#F8F6F5]",
+      accent: "bg-[#ECE9E8]",
+      objetivo:
+        "Capacitar os profissionais para compreender como atender aos requisitos do Sistema de Gestão da norma escolhida, e formar a base para os auditores internos para avaliar sistemas de gestão com eficácia.",
+      duracao: "16 horas.",
+      publico:
+        "Profissionais de qualidade, segurança da informação, meio ambiente e gestão de riscos.",
+    },
+    {
+      label: "Implantação de Sistemas de Gestão",
+      color: "bg-[#F8F6F5]",
+      accent: "bg-[#ECE9E8]",
+      objetivo:
+        "Identificar as etapas e conteúdos necessários para implementar sistemas conforme normas ISO.",
+      duracao: "32 horas (personalizável).",
+      publico: "Gestores, consultores e equipes de implementação.",
+    },
+    {
+      label: "Documentação SGSI – ISO27001",
+      color: "bg-[#F8F6F5]",
+      accent: "bg-[#ECE9E8]",
+      objetivo:
+        "Capacitar os participantes para entenderem, elaborarem e manterem a documentação necessária ao SGSI, conforme os requisitos da ISO/IEC 27001:2022.",
+      duracao: "16 horas.",
+      publico:
+        "Profissionais de segurança da informação que participem da implantação, manutenção e melhoria de um SGSI.",
+    },
+    {
+      label: "Controles Anexo A – ISO 27001",
+      color: "bg-[#F8F6F5]",
+      accent: "bg-[#ECE9E8]",
+      objetivo:
+        "Capacitar os participantes para entenderem, elaborarem e manterem a documentação necessária ao SGSI, conforme os requisitos da ISO/IEC 27001:2022.",
+      duracao: "16 horas.",
+      publico:
+        "Profissionais de segurança da informação que participem da implantação, manutenção e melhoria de um SGSI.",
+    },
+    {
+      label: "Formação de Auditores Internos – ISO 19011",
+      color: "bg-[#F8F6F5]",
+      accent: "bg-[#ECE9E8]",
+      objetivo:
+        "Capacitar auditores internos para avaliar sistemas de gestão com eficácia.",
+      duracao: "16 horas.",
+      publico:
+        "Profissionais de qualidade, segurança da informação, gestão de serviços, gestão de privacidade, continuidade do negócio e gestão de riscos.",
+    },
+    {
+      label: "Gestão de Riscos (ISO 31000/27005)",
+      color: "bg-[#F8F6F5]",
+      accent: "bg-[#ECE9E8]",
+      objetivo:
+        "Desenvolver habilidades para elaborar e implantar uma metodologia de avaliação de riscos para os sistemas de gestão com base nas normas ISO.",
+      duracao: "16 horas.",
+      publico: "Profissionais de compliance, TI e segurança da informação.",
+    },
+  ];
+
+  return (
+    <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+      {tabs.map((t, i) => (
+        <div
+          key={i}
+          className={`group relative rounded-3xl ${t.color} shadow-lg border border-[#ECE9E8] p-5 md:p-6 transition`}
+        >
+          {/* Aba/orelha da pasta */}
+          <span
+            className={`absolute -top-3 left-6 ${t.accent} text-[#1E1E1E] text-sm px-3 py-1 rounded-t-xl rounded-b-md shadow`}
+          >
+            {t.label}
+          </span>
+
+          <div className="text-[#1E1E1E]">
+            <p className="text-sm opacity-70">
+              Abra a pasta para explorar os conteúdos.
+            </p>
+          </div>
+
+          {/* Conteúdo no hover */}
+          <div
+            className="
+              mt-4 max-h-0 opacity-0 overflow-hidden
+              group-hover:max-h-[420px] group-hover:opacity-100
+              transition-all duration-500 ease-out
+            "
+          >
+            <div className="rounded-2xl bg-white p-4">
+              <ul className="space-y-2 text-[#5C5C5C] text-sm">
+                <li>
+                  <span className="font-medium text-[#1E1E1E]">
+                    • Objetivo:{" "}
+                  </span>
+                  {t.objetivo}
+                </li>
+                <li>
+                  <span className="font-medium text-[#1E1E1E]">
+                    • Duração:{" "}
+                  </span>
+                  {t.duracao}
+                </li>
+                <li>
+                  <span className="font-medium text-[#1E1E1E]">
+                    • Público-alvo:{" "}
+                  </span>
+                  {t.publico}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/** ===========
+ *  Seção toda
+ *  =========== */
 export default function Treinamentos() {
   return (
     <section id="treinamentos" className="bg-[#F8F6F5]">
@@ -120,18 +246,16 @@ export default function Treinamentos() {
             soluções de capacitação alinhadas às melhores práticas
             internacionais e às normas ISO. Nossa área de treinamentos é
             especializada em preparar profissionais e organizações para os
-            desafios das certificações das organizações do mercado, com
-            programas práticos, personalizados e baseados em normas
-            reconhecidas, como as normas ISO 27001, ISO 27701, ISO20000-1 e ISO
-            22301, e a realizar auditorias conforme a norma ISO19011.
+            desafios das certificações, com programas práticos, personalizados e
+            baseados em normas reconhecidas (ISO 27001, ISO 27701, ISO 20000-1 e
+            ISO 22301) e auditorias conforme a ISO 19011.
           </p>
 
           <p className="mt-4 md:text-lg max-w-prose text-[#1E1E1E]">
             Transformamos conhecimento em resultados tangíveis. Somos
             especialistas em capacitar profissionais e organizações para
-            dominarem os desafios dos sistemas de gestão, com treinamentos que
-            combinam rigor técnico e aplicação prática, assim desenvolvemos os
-            profissionais alinhados com as normas ISO.
+            dominarem os desafios dos sistemas de gestão, combinando rigor
+            técnico e aplicação prática.
           </p>
         </div>
       </div>
@@ -141,9 +265,12 @@ export default function Treinamentos() {
         <DifferentialsCarousel />
       </div>
 
+      {/* pastas/abas */}
       <div className="max-w-6xl mx-auto px-4">
         <FolderTabs />
       </div>
+
+      {/* botão */}
       <div className="text-center p-10">
         <a
           href="#contato"

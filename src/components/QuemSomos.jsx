@@ -4,7 +4,7 @@ export default function QuemSomos() {
   return (
     <section id="sobre" className="bg-[#F8F6F5]">
       <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-start">
-        {/* --- COLUNA ESQUERDA (igual à sua) --- */}
+        {/* COLUNA ESQUERDA */}
         <div>
           <h2 className="font-serif text-4xl md:text-5xl text-[#1E1E1E]">
             Nossa Liderança
@@ -23,7 +23,6 @@ export default function QuemSomos() {
 
           {/* Medalhas de destaque */}
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
-            {/* Medalha 1 */}
             <div className="relative flex flex-col items-center text-center">
               <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-[#7A1631] shadow-lg">
                 30+
@@ -33,7 +32,6 @@ export default function QuemSomos() {
               </p>
             </div>
 
-            {/* Medalha 2 */}
             <div className="relative flex flex-col items-center text-center">
               <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-[#561024] shadow-lg">
                 100%
@@ -43,7 +41,6 @@ export default function QuemSomos() {
               </p>
             </div>
 
-            {/* Medalha 3 */}
             <div className="relative flex flex-col items-center text-center">
               <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-2xl font-bold bg-[#A43C55] shadow-lg">
                 6.000h+
@@ -55,9 +52,8 @@ export default function QuemSomos() {
           </div>
         </div>
 
-        {/* --- COLUNA DIREITA: BIO DO DIRETOR --- */}
+        {/* COLUNA DIREITA */}
         <div className="space-y-6">
-          {/* Card com foto + resumo */}
           <div className="bg-white rounded-3xl shadow p-6 md:p-7 border border-[#ECE9E8]">
             <div className="flex items-start gap-5">
               <img
@@ -83,7 +79,6 @@ export default function QuemSomos() {
             </div>
           </div>
 
-          {/* Blocos expansíveis (sem libs) */}
           <details className="group bg-white rounded-2xl shadow p-5 border border-[#ECE9E8]">
             <summary className="cursor-pointer list-none flex items-center justify-between">
               <span className="font-serif text-xl text-[#1E1E1E]">
