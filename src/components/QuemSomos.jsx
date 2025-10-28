@@ -6,10 +6,10 @@ export default function QuemSomos() {
       <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-start">
         {/* COLUNA ESQUERDA */}
         <div>
-          <h2 className="font-serif text-4xl md:text-5xl text-primaryDark">
+          <h2 className="font-title font-bold text-4xl md:text-4xl text-primaryDark">
             Nossa Liderança
           </h2>
-          <h3 className="font-serif text-2xl md:text-2xl pt-3 text-primaryDark">
+          <h3 className=" font-title font-semibold text-2xl md:text-2xl pt-3 text-primaryDark">
             Uma mensagem do nosso diretor técnico
           </h3>
           <p className="mt-6 md:text-lg max-w-prose text-[#1E1E1E]">
@@ -24,28 +24,28 @@ export default function QuemSomos() {
           {/* Medalhas de destaque */}
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
             <div className="relative flex flex-col items-center text-center">
-              <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-[#7A1631] shadow-lg">
+              <div className="font-body font-medium w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-[#7A1631] shadow-lg">
                 30+
               </div>
-              <p className="mt-3 font-medium text-[#1E1E1E]">
+              <p className="font-body font-medium mt-3 font-medium text-[#1E1E1E]">
                 anos de experiência em Sistemas de Gestão
               </p>
             </div>
 
             <div className="relative flex flex-col items-center text-center">
-              <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-[#561024] shadow-lg">
+              <div className="font-body font-medium w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-[#561024] shadow-lg">
                 100%
               </div>
-              <p className="mt-3 font-medium text-[#1E1E1E]">
+              <p className="font-body font-medium mt-3 font-medium text-[#1E1E1E]">
                 Foco em sistemas ISO
               </p>
             </div>
 
             <div className="relative flex flex-col items-center text-center">
-              <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-2xl font-bold bg-[#A43C55] shadow-lg">
+              <div className="font-body font-medium w-32 h-32 flex items-center justify-center rounded-full text-white text-2xl font-bold bg-[#A43C55] shadow-lg">
                 6.000h+
               </div>
-              <p className="mt-3 font-medium text-[#1E1E1E]">
+              <p className="font-body font-medium mt-3 font-medium text-[#1E1E1E]">
                 Treinamentos ministrados
               </p>
             </div>
@@ -63,7 +63,7 @@ export default function QuemSomos() {
               />
 
               <div>
-                <div className="font-serif text-2xl md:text-3xl text-[#1E1E1E]">
+                <div className="font-title font-semibold  text-2xl md:text-3xl text-[#1E1E1E]">
                   Reinaldo Zampieri
                 </div>
                 <div className="text-sm mt-1 bg-[#7A1631] text-white inline-block px-3 py-1 rounded-full">
@@ -79,9 +79,9 @@ export default function QuemSomos() {
             </div>
           </div>
 
-          <details className="group bg-white rounded-2xl shadow p-5 border border-[#ECE9E8]">
+          <details className=" group bg-white rounded-2xl shadow p-5 border border-[#ECE9E8]">
             <summary className="cursor-pointer list-none flex items-center justify-between">
-              <span className="font-serif text-xl text-[#1E1E1E]">
+              <span className=" font-title font-semibold  text-xl text-[#1E1E1E]">
                 Diferenciais Profissionais
               </span>
               <span className="transition group-open:rotate-180 text-[#1E1E1E]">
@@ -108,7 +108,7 @@ export default function QuemSomos() {
 
           <details className="group bg-white rounded-2xl shadow p-5 border border-[#ECE9E8]">
             <summary className="cursor-pointer list-none flex items-center justify-between">
-              <span className="font-serif text-xl text-[#1E1E1E]">
+              <span className="font-title font-semibold  text-xl text-[#1E1E1E]">
                 Realizações de Destaque
               </span>
               <span className="transition group-open:rotate-180 text-[#1E1E1E]">
@@ -133,7 +133,7 @@ export default function QuemSomos() {
 
           <details className="group bg-white rounded-2xl shadow p-5 border border-[#ECE9E8]">
             <summary className="cursor-pointer list-none flex items-center justify-between">
-              <span className="font-serif text-xl text-[#1E1E1E]">
+              <span className="font-title font-semibold  text-xl text-[#1E1E1E]">
                 Áreas de Especialização
               </span>
               <span className="transition group-open:rotate-180 text-[#1E1E1E]">

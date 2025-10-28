@@ -3,15 +3,15 @@ import React from "react";
 export default function Servicos() {
   return (
     <section id="servicos" className="relative">
-      <div className="max-w-6xl mx-auto px-4 pt-12 pb-6 text-center">
-        <h2 className="font-serif text-4xl md:text-5xl text-white">
+      <div className="max-w-6xl mx-auto px-4 pt-12 pb-0 text-center">
+        <h2 className="font-title font-bold text-4xl md:text-4xl text-white">
           Operação Assistida
         </h2>
       </div>
       <div className="absolute inset-0 -z-10 bg-primary" />
-      <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div className="font-body font-semibold max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-5 items-center">
         <div>
-          <p className="mt-6 text-white/95 md:text-lg max-w-prose">
+          <p className="  mt-6 text-white/95 md:text-lg max-w-prose">
             Neste modelo de suporte trabalhamos lado a lado com a equipe do
             cliente, fornecendo orientação, ferramentas e metodologias para
             implementar, manter e melhorar sistemas de gestão, como:
@@ -25,14 +25,14 @@ export default function Servicos() {
             <li>• SGCN (ISO/IEC 22301:2024).</li>
           </ul>
 
-          <p className="mt-6 text-white/90 md:text-lg max-w-prose">
+          <p className="font-serif mt-6 text-white/90 md:text-lg max-w-prose">
             Diferente da consultoria tradicional, a operação assistida garante
             que o cliente não dependa eternamente de um consultor externo, mas
             sim adquira o conhecimento necessário para gerenciar seus processos
             de forma independente.
           </p>
           <div className="max-w-6xl mx-auto px-4 pt-12 pb-1 text-center">
-            <h3 className="font-serif text-2xl md:text-2xl text-white">
+            <h3 className="font-title font-bold  text-2xl md:text-2xl text-white">
               Principais serviços na operação assistida:
             </h3>
           </div>
@@ -42,7 +42,7 @@ export default function Servicos() {
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
             alt="Time trabalhando"
-            className="rounded-3xl shadow-2xl border-8 border-white/70 max-w-md"
+            className="rounded-3xl shadow-2xl  /70 max-w-md"
           />
         </div>
       </div>
@@ -56,7 +56,7 @@ export default function Servicos() {
           },
           {
             f: "Suporte na Manutenção e Melhoria",
-            b: "• Monitoramento contínuo de desempenho.\n• Auditorias internas assistidas.",
+            b: "• Monitoramento contínuo de desempenho.\n • Auditorias internas assistidas.",
           },
           {
             f: "Preparação para Certificação",
@@ -66,7 +66,7 @@ export default function Servicos() {
           <div key={i} className="group [perspective:1000px]">
             <div className="relative aspect-square w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               {/* frente */}
-              <div className="absolute inset-0 bg-goldAccent/10 border border-goldAccent/25 rounded-2xl p-10 flex items-center justify-center text-center text-white/95 backdrop-blur-sm [backface-visibility:hidden] shadow-[0_8px_24px_rgba(0,0,0,0.15)]">
+              <div className="font-title font-bold  absolute inset-0 bg-goldAccent/10 border border-goldAccent/25 rounded-2xl p-10 flex items-center justify-center text-center text-white/95 backdrop-blur-sm [backface-visibility:hidden] shadow-[0_8px_24px_rgba(0,0,0,0.15)]">
                 <p className="font-medium">{c.f}</p>
               </div>
               {/* verso */}
@@ -79,7 +79,7 @@ export default function Servicos() {
       </div>
 
       {/* botão */}
-      <div className="text-center mt-10 p-6">
+      <div className="font-title font-semibold tracking-wide uppercase text-center mt-10 p-6">
         <a
           href="#contato"
           className="inline-block rounded-full bg-white text-neutralDark px-6 py-3 font-medium shadow hover:shadow-md border border-goldAccent/25"

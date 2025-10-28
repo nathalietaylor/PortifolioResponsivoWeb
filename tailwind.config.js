@@ -3,6 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        title: ["Syne", "sans-serif"], // para títulos
+        body: ["Syne", "sans-serif"], // para corpo (também Syne)
+      },
+      fontWeight: {
+        semibold: "600",
+      },
+
       colors: {
         primary: "#7A1631", // vinho institucional
         primaryDark: "#561024", // vinho profundo

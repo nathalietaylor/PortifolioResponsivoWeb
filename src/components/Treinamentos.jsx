@@ -37,13 +37,13 @@ function DifferentialsCarousel() {
 
   return (
     <div className="mt-10 text-primaryDark font-sans">
-      <h3 className="text-2xl md:text-3xl font-serif text-center mb-8">
+      <h3 className="text-2xl md:text-3xl font-title font-semibold text-center mb-8">
         Diferenciais dos Nossos Treinamentos
       </h3>
 
       <div className="relative max-w-3xl mx-auto">
         <div className="bg-sand border border-sand rounded-3xl p-8 md:p-10 shadow-[0_8px_24px_rgba(0,0,0,0.12)]">
-          <h4 className="font-serif text-2xl md:text-3xl">
+          <h4 className="font-title font-semiboldtext-2xl md:text-xl">
             {slides[idx].title}
           </h4>
           <ul className="mt-4 space-y-2 text-slate text-base md:text-lg">
@@ -142,7 +142,7 @@ function FolderTabs() {
           key={i}
           className="group relative rounded-3xl bg-neutralDark bg-opacity-5 shadow-lg border border-sand p-5 md:p-6 transition"
         >
-          <span className="absolute -top-3 left-6 bg-goldAccent text-white text-sm px-3 py-1 rounded-t-xl rounded-b-md shadow">
+          <span className="font-title font-semibold absolute -top-3 left-6 bg-goldAccent text-white text-sm px-3 py-1 rounded-t-xl rounded-b-md shadow">
             {t.label}
           </span>
 
@@ -184,7 +184,7 @@ export default function Treinamentos() {
   return (
     <section id="treinamentos" className="bg-neutralLight">
       <div className="max-w-6xl mx-auto px-4 pt-12 pb-6 text-center">
-        <h2 className="font-serif text-4xl md:text-5xl text-primaryDark">
+        <h2 className="font-title font-bold text-4xl md:text-4xl text-primaryDark">
           Treinamentos para Sistemas de Gestão
         </h2>
       </div>
@@ -229,7 +229,7 @@ export default function Treinamentos() {
       <div className="text-center p-10">
         <a
           href="#contato"
-          className="inline-block rounded-full bg-primary hover:bg-primaryLight text-white px-6 py-3 font-medium shadow-[0_4px_10px_rgba(0,0,0,0.12)]"
+          className="font-title font-semibold tracking-wide uppercase inline-block rounded-full bg-primary hover:bg-primaryLight text-white px-6 py-3 font-medium shadow-[0_4px_10px_rgba(0,0,0,0.12)]"
         >
           Solicitar catálogo
         </a>
