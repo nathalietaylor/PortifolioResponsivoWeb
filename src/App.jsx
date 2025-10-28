@@ -228,9 +228,6 @@ export default function App() {
             <a href="#treinamentos" className="hover:opacity-70">
               Treinamentos
             </a>
-            <a href="#contato" className="hover:opacity-70">
-              Contato
-            </a>
           </nav>
           <a
             href="#contato"
@@ -466,54 +463,166 @@ export default function App() {
 
       {/* QUEM SOMOS */}
       <section id="sobre" className="bg-pink-100">
-        <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-start">
+          {/* --- COLUNA ESQUERDA (igual à sua) --- */}
           <div>
-            <h2 className="font-serif text-4xl md:text-5xl">Quem somos</h2>
+            <h2 className="font-serif text-4xl md:text-5xl">Nossa Liderança</h2>
+            <h3 className="font-serif text-2xl md:text-2xl pt-3">
+              Uma mensagem do nosso diretor técnico
+            </h3>
             <p className="mt-6 md:text-lg max-w-prose">
-              Especialistas em transformar desafios de gestão em resultados
-              práticos, sempre com transferência de conhecimento.
+              "Na SISTEGE, acreditamos que a implantação de um sistema de gestão
+              só faz sentido quando transforma desafios em oportunidades
+              reais... Juntos, vamos além dos resultados esperados."
             </p>
-            <div className="mt-6 grid grid-cols-2 gap-4 text-center">
-              <div className="bg-white rounded-2xl p-6 shadow">
-                <div className="text-3xl font-semibold">10+</div>
-                <div className="text-sm opacity-70">anos de atuação</div>
+            <p className="mt-6 md:text-md max-w-prose text-right italic">
+              Reinaldo Zampieri
+            </p>
+
+            {/* Medalhas de destaque */}
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+              {/* Medalha 1 */}
+              <div className="relative flex flex-col items-center text-center">
+                <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-yellow-400 shadow-lg relative before:absolute before:inset-0 before:rounded-full before:bg-yellow-400 before:-z-10 before:[mask-image:radial-gradient(circle,transparent_60%,black_61%)]">
+                  30+
+                </div>
+                <p className="mt-3 font-medium text-slate-800">
+                  anos de experiência em Sistemas de Gestão
+                </p>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow">
-                <div className="text-3xl font-semibold">100%</div>
-                <div className="text-sm opacity-70">foco em sistemas ISO</div>
+
+              {/* Medalha 2 */}
+              <div className="relative flex flex-col items-center text-center">
+                <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-3xl font-bold bg-green-400 shadow-lg relative before:absolute before:inset-0 before:rounded-full before:bg-green-400 before:-z-10 before:[mask-image:radial-gradient(circle,transparent_60%,black_61%)]">
+                  100%
+                </div>
+                <p className="mt-3 font-medium text-slate-800">
+                  Foco em sistemas ISO
+                </p>
+              </div>
+
+              {/* Medalha 3 (opcional) */}
+              <div className="relative flex flex-col items-center text-center">
+                <div className="w-32 h-32 flex items-center justify-center rounded-full text-white text-2xl font-bold bg-blue-400 shadow-lg relative before:absolute before:inset-0 before:rounded-full before:bg-blue-400 before:-z-10 before:[mask-image:radial-gradient(circle,transparent_60%,black_61%)]">
+                  6.000h+
+                </div>
+                <p className="mt-3 font-medium text-slate-800">
+                  Treinamentos ministrados
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="space-y-4">
-            <div className="bg-white rounded-2xl p-6 shadow">
-              <h3 className="font-medium">Missão</h3>
-              <p className="text-sm opacity-80 mt-1">
-                Soluções eficientes e sustentáveis no dia a dia do cliente.
-              </p>
+          {/* --- COLUNA DIREITA: BIO DO DIRETOR --- */}
+          <div className="space-y-6">
+            {/* Card com foto + resumo */}
+            <div className="bg-white rounded-3xl shadow p-6 md:p-7 border border-white/60">
+              <div className="flex items-start gap-5">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop"
+                  alt="Diretor técnico"
+                  className="w-48 h-48 md:w-56 md:h-56 object-cover shadow-lg mx-auto"
+                />
+
+                <div>
+                  <div className="font-serif text-2xl md:text-3xl">
+                    Reinaldo Zampieri
+                  </div>
+                  <div className="text-sm mt-1 bg-slate-900 text-white inline-block px-3 py-1 rounded-full">
+                    Diretor Técnico • Auditor Líder (IRCA/RABQSA)
+                  </div>
+                  <p className="mt-3 text-sm md:text-base opacity-80">
+                    Profissional especializado em auditorias e implantação de
+                    normas ISO. Instrutor com 6.280+ horas de treinamentos (ISO
+                    9001, 27001, 27701, 20000-1, 22301). Atuação no Brasil e
+                    América do Sul, pioneiro em auditorias integradas.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow">
-              <h3 className="font-medium">Visão</h3>
-              <p className="text-sm opacity-80 mt-1">
-                Ser referência em operação assistida.
-              </p>
-            </div>
-            <div className="bg-white rounded-2xl p-6 shadow">
-              <h3 className="font-medium">Valores</h3>
-              <p className="text-sm opacity-80 mt-1">
-                Ética, transparência, qualidade e valorização das pessoas.
-              </p>
-            </div>
+
+            {/* Blocos expansíveis (sem libs) */}
+            <details className="group bg-white rounded-2xl shadow p-5 border border-white/60">
+              <summary className="cursor-pointer list-none flex items-center justify-between">
+                <span className="font-serif text-xl">
+                  Diferenciais Profissionais
+                </span>
+                <span className="transition group-open:rotate-180">⌄</span>
+              </summary>
+              <ul className="mt-3 space-y-2 text-sm md:text-base opacity-85">
+                <li>• 6.280+ horas de treinamentos ministrados</li>
+                <li>• 255+ dias em auditorias de terceira parte</li>
+                <li>
+                  • Projetos no Brasil, Argentina, Chile, Colômbia, Peru,
+                  Equador e Venezuela
+                </li>
+                <li>
+                  • Participação pioneira em certificações inéditas na América
+                  do Sul
+                </li>
+                <li>
+                  • Instrutor e mentor de auditores e equipes técnicas (SI,
+                  continuidade, serviços, qualidade e privacidade)
+                </li>
+              </ul>
+            </details>
+
+            <details className="group bg-white rounded-2xl shadow p-5 border border-white/60">
+              <summary className="cursor-pointer list-none flex items-center justify-between">
+                <span className="font-serif text-xl">
+                  Realizações de Destaque
+                </span>
+                <span className="transition group-open:rotate-180">⌄</span>
+              </summary>
+              <ul className="mt-3 space-y-2 text-sm md:text-base opacity-85">
+                <li>
+                  • Pioneiro em auditorias integradas ISO 27001, ISO 20000-1 e
+                  ISO 9001 na América do Sul
+                </li>
+                <li>
+                  • Conduziu a 1ª certificação de Continuidade de Negócios na
+                  América do Sul
+                </li>
+                <li>
+                  • Responsável pela 1ª certificação de Privacidade de Dados
+                  Pessoais em Data Center no Brasil
+                </li>
+              </ul>
+            </details>
+
+            <details className="group bg-white rounded-2xl shadow p-5 border border-white/60">
+              <summary className="cursor-pointer list-none flex items-center justify-between">
+                <span className="font-serif text-xl">
+                  Áreas de Especialização
+                </span>
+                <span className="transition group-open:rotate-180">⌄</span>
+              </summary>
+              <ul className="mt-3 space-y-2 text-sm md:text-base opacity-85">
+                <li>
+                  • Auditoria Líder: ISO 9001, ISO 27001, ISO 27701, ISO 22301,
+                  ISO 20000-1
+                </li>
+                <li>
+                  • Implantação: Segurança da Informação, Serviços,
+                  Continuidade, Privacidade (LGPD/ISO 27701), Qualidade
+                </li>
+                <li>
+                  • Treinamentos: Auditores, Requisitos de Normas, Implantação,
+                  Gestão de Riscos, Ferramentas da Qualidade
+                </li>
+              </ul>
+            </details>
           </div>
         </div>
       </section>
+
       {/* CONTATO */}
       <section id="contato" className="bg-white">
         <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10">
           <div>
             <h2 className="font-serif text-4xl md:text-5xl">Contato</h2>
             <p className="mt-6 md:text-lg max-w-prose">
-              Envie uma mensagem e retornaremos em breve.
+              Envie uma mensagem e retornaremos em breve!
             </p>
             <form className="mt-8 grid gap-4">
               <input
@@ -542,7 +651,7 @@ export default function App() {
             <h3 className="font-medium text-lg">Informações</h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li>• E-mail: contato@sistege.net.br</li>
-              <li>• São Paulo / Valinhos — SP</li>
+              <li>• São Paulo — SP</li>
               <li>• Instagram: @sistege_sg</li>
             </ul>
             <div className="mt-6 h-56 rounded-2xl bg-gradient-to-br from-slate-200 to-slate-100 flex items-center justify-center text-slate-500">
@@ -556,7 +665,7 @@ export default function App() {
       <footer className="border-t bg-white">
         <div className="max-w-6xl mx-auto px-4 py-10 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
           <p>© {new Date().getFullYear()} Sistege — Sistemas de Gestão</p>
-          <div className="opacity-70">Feito por Nathalie Zampieri</div>
+          <div className="opacity-20">Desenvolvido por Nathalie Zampieri</div>
         </div>
       </footer>
     </div>
