@@ -5,7 +5,7 @@ export default function Contatos() {
     <section id="contato" className="bg-white">
       <div className="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10">
         <div>
-          <h2 className="font-serif text-4xl md:text-5xl text-primaryDark">
+          <h2 className="font-title text-4xl md:text-5xl text-primaryDark ">
             Contato
           </h2>
           <p className="mt-6 md:text-lg max-w-prose text-[#1E1E1E]">

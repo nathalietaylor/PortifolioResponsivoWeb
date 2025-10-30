@@ -11,13 +11,19 @@ export default function Servicos() {
       <div className="absolute inset-0 -z-10 bg-primary" />
       <div className="font-body font-semibold max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-5 items-center">
         <div>
-          <p className="  mt-6 text-white/95 md:text-lg max-w-prose">
+          <p
+            className="text-white/95 text-base md:text-lg leading-relaxed antialiased font-normal"
+            style={{ fontFamily: "'Segoe UI', sans-serif" }}
+          >
             Neste modelo de suporte trabalhamos lado a lado com a equipe do
             cliente, fornecendo orientação, ferramentas e metodologias para
             implementar, manter e melhorar sistemas de gestão, como:
           </p>
 
-          <ul className="mt-4 space-y-3 text-white/95 md:text-lg max-w-prose list-none">
+          <ul
+            className="text-white/95 text-base md:text-lg leading-relaxed antialiased font-normal p-10"
+            style={{ fontFamily: "'Segoe UI', sans-serif" }}
+          >
             <li>
               • SGSI (ISO/IEC 27001:2024) e Privacidade (ISO/IEC 27701:2019);
             </li>
@@ -25,7 +31,10 @@ export default function Servicos() {
             <li>• SGCN (ISO/IEC 22301:2024).</li>
           </ul>
 
-          <p className="font-serif mt-6 text-white/90 md:text-lg max-w-prose">
+          <p
+            className="text-white/95 text-base md:text-lg leading-relaxed antialiased font-normal"
+            style={{ fontFamily: "'Segoe UI', sans-serif" }}
+          >
             Diferente da consultoria tradicional, a operação assistida garante
             que o cliente não dependa eternamente de um consultor externo, mas
             sim adquira o conhecimento necessário para gerenciar seus processos
